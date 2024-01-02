@@ -29,7 +29,7 @@ export default function Login() {
                                         <Form.Control type="password" placeholder="Password" />
                                     </Form.Group>
                                     
-                                    <Button href="/home" variant="primary" type="submit" className="Login-bt">
+                                    <Button href="/Home" variant="primary" type="submit" className="Login-bt">
                                         Login
                                     </Button>
                                     <div style={{display: 'flex', justifyContent:'center', marginTop: 25}}>New here? Please <a href="/signup"> signup</a></div>
