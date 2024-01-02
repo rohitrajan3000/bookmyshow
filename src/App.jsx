@@ -8,10 +8,10 @@ import Home from './components/Home';
 import Login from './components/Login';
 
 import { Button } from 'react-bootstrap';
+import Movie from './components/Movie';
 import SelectSeat from './components/SelectSeat';
 import SignUp from './components/SignUp';
 import Success from './components/Success';
-import Movie from './components/movie';
 
 
 
