@@ -26,7 +26,7 @@ const Home = () => {
   
        const clickhandel =(movie) => {
         
-        navigate('/movie/'+ movie.id , {state: movie});
+        navigate('/Movie/'+ movie.id , {state: movie});
 
        }
 

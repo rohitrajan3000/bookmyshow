@@ -9,7 +9,7 @@ import Login from './components/Login';
 
 import { Button } from 'react-bootstrap';
 
-import Move from './components/Move';
+import Movie from './components/Movie';
 import SelectSeat from './components/SelectSeat';
 import SignUp from './components/SignUp';
 import Success from './components/Success';
@@ -61,12 +61,14 @@ function App() {
 
       <Routes>
       
-
+      <Route path='/' element={<Login />} />
       
+        <Route path='/login' element={<Login />} />
+
         <Route path='/signup' element={<SignUp />} />
-        <Route path='/' element={<Login />} />
+      
         <Route path='/home' element={<Home />} />
-        <Route path='/movie/:id' element={< Move />} />
+        <Route path='/Movie/:id' element={< Movie />} />
         <Route path='/select' element={<SelectSeat />} />
         <Route path='/succes' element={<Success />} />
 
