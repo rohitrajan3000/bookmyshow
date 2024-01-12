@@ -17,22 +17,15 @@ const Home = () => {
     useEffect(() => {
         axios.get(MOVIE_API).then((resp) => {
             setMovies(resp.data.results)
+            console.log(resp.data.results)
         })
 
     }, []);
-
-    
-
-  
        const clickhandel =(movie) => {
         
         navigate('/Movie/'+ movie.id , {state: movie});
 
        }
-
-    
-
-
        
     return (
         <div style={{ padding: 20, display: 'flex', flexWrap: 'wrap' }}>

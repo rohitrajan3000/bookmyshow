@@ -5,9 +5,13 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
+import { useNavigate } from "react-router-dom";
 import LoginImg from '../assets/1.png';
 
 export default function Login() {
+
+    const navigate = useNavigate();
+
     return (
         <div className="auth-container">
             <Container >
@@ -29,7 +33,7 @@ export default function Login() {
                                         <Form.Control type="password" placeholder="Password" />
                                     </Form.Group>
                                     
-                                    <Button href="/Home" variant="primary" type="submit" className="Login-bt">
+                                    <Button onClick={()=>navigate('/home')} variant="primary" type="submit" className="Login-bt">
                                         Login
                                     </Button>
                                     <div style={{display: 'flex', justifyContent:'center', marginTop: 25}}>New here? Please <a href="/signup"> signup</a></div>
